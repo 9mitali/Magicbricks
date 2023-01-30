@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+	<listeners>
+		<listener class-name="resources.ExtentReporterNG" />
+		<!-- <listener class-name="resources.Listeners" /> -->
+	</listeners>
+	<test thread-count="5" name="Test">
+		<classes>
+			<class
+				name="stepDefinationEligibility.StepDefinationEligibility" />
+		</classes>
+	</test>
+	<test thread-count="5" name="Test1">
+		<classes>
+			<class name="stepDefinationEmi.StepDefinationEmi" />
+		</classes>
+	</test>
+	<test thread-count="5" name="Test2">
+		<!-- <parameter name="Lamount" value="500000" /> <parameter name="mobile" 
+			value="987456123" /> -->
+		<classes>
+			<class name="stepDefinationExplore.StepDefinationExplore" />
+		</classes>
+	</test>
+	<test thread-count="5" name="Test3">
+		<classes>
+			<class
+				name="stepDefinationBalanceTransfer.StepDefinationBalanceTransfer" />
+		</classes>
+	</test>
+	<!-- <test thread-count="5" name="Test4"> <parameter name="Lnamount" value="500000" 
+		/> <parameter name="mobile" value="987456123" /> <classes> <class name="stepDefination.StepDefination" 
+		/> </classes> </test> -->
+</suite> <!-- Suite -->
